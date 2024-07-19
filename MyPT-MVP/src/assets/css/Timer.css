@@ -1,0 +1,102 @@
+/* Timer.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.Timerbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.timer-container {
+  text-align: center;
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.5);
+  border: 1px solid #00ffff;
+  width: 600px; /* Fixed width */
+  height: 700px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timer-container h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.timer {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: #00ff00;
+  text-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+.break-time {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.details {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+/* New styles for exercise details */
+.exercise-details {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #00ffff;
+  background-color: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  border: 1px solid #00ffff;
+}
+
+.exercise-details h2 {
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+.exercise-details p {
+  margin: 5px 0;
+  color: #cccccc;
+}
+
+.timerbuttons {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #00ffff;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.timerbuttons:hover {
+  background-color: #00ff00;
+  color: #0d0d0d;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+button#pause-btn, button#continue-btn {
+  display: none;
+}
